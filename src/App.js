@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
+import LandingPage from "./components/LandingPage/LandingPage";
 import Home from "./components/Home/Home";
 import Menu from "./components/Menu/Menu";
 import MenuCinephile from "./components/Cinephile/MenuCinephile";
@@ -12,14 +13,16 @@ import BookDetails from "./components/Bookworm/BookDetails";
 import BookList0 from "./components/Bookworm/BookList0";
 import BookList50 from "./components/Bookworm/BookList50";
 import BookList200 from "./components/Bookworm/BookList200";
+import "./App.css";
 
 function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/home" component={Home} />
         <Route path="/menu" component={Menu} />
-        <Route path="/menu-cine" component={MenuCinephile} />
+        <Route path="/menu-cinema" component={MenuCinephile} />
         <Route path="/menu-book" component={MenuBookworm} />
         <Route path="/movie/:id" component={MovieDetails} />
         <Route path="/movies-1" component={MovieList0} />

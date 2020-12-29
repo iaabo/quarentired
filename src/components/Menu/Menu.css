@@ -1,0 +1,14 @@
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.cinephile {
+  display: inline-block;
+}
+
+.img-menu {
+  width: 200px;
+  height: 200px;
+}
