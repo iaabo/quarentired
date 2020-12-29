@@ -13,7 +13,7 @@ const LandingPage = () => {
         className="button"
         style={{ textDecoration: "none", color: "#0E075F" }}
       >
-        Say No More
+        Say No More ... Click here!
       </Link>
     </div>
   );
