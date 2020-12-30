@@ -5,7 +5,6 @@ import Home from "./components/Home/Home";
 import Menu from "./components/Menu/Menu";
 import MenuCinephile from "./components/Cinephile/MenuCinephile";
 import MenuBookworm from "./components/Bookworm/MenuBookworm";
-import MovieDetails from "./components/Cinephile/MovieDetails";
 import MovieList0 from "./components/Cinephile/MovieList0";
 import MovieList50 from "./components/Cinephile/MovieList50";
 import MovieList200 from "./components/Cinephile/MovieList200";
@@ -24,7 +23,6 @@ function App() {
         <Route path="/menu" component={Menu} />
         <Route path="/menu-cinema" component={MenuCinephile} />
         <Route path="/menu-book" component={MenuBookworm} />
-        <Route path="/movie/:id" component={MovieDetails} />
         <Route path="/movies-1" component={MovieList0} />
         <Route path="/movies-2" component={MovieList50} />
         <Route path="/movies-3" component={MovieList200} />
