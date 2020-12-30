@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import popcorn from "../../assets/popcorn.png";
 import book from "../../assets/book.png";
+import game from "../../assets/game.png";
 import "./Menu.css";
 
 const Menu = () => {
@@ -30,6 +31,16 @@ const Menu = () => {
               style={{ textDecoration: "none", color: "white" }}
             >
               Bookworm
+            </Link>
+          </div>
+          <div className="gamer">
+            <img src={game} alt="" className="img-menu" />
+            <Link
+              to="/menu-game"
+              className="link-game"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Gamer
             </Link>
           </div>
         </div>

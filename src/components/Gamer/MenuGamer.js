@@ -4,9 +4,9 @@ import Navbar from "../Navbar/Navbar";
 import smiling from "../../assets/smiling.png";
 import neutral from "../../assets/neutral.png";
 import sweat from "../../assets/sweat.png";
-import "./Bookworm.css";
+import "./Gamer.css";
 
-const MenuBookworm = () => {
+const MenuGamer = () => {
   return (
     <div>
       <div>
@@ -17,7 +17,7 @@ const MenuBookworm = () => {
             <div className="zero">
               <img src={smiling} alt="" className="img-menu" />
               <Link
-                to="/books-1"
+                to="/games-1"
                 className="link-zero"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -27,7 +27,7 @@ const MenuBookworm = () => {
             <div className="bookworm">
               <img src={neutral} alt="" className="img-menu" />
               <Link
-                to="/books-2"
+                to="/games-2"
                 className="link-fifty"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -37,7 +37,7 @@ const MenuBookworm = () => {
             <div className="bookworm">
               <img src={sweat} alt="" className="img-menu" />
               <Link
-                to="/books-3"
+                to="/games-3"
                 className="link-hundred"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -51,4 +51,4 @@ const MenuBookworm = () => {
   );
 };
 
-export default MenuBookworm;
+export default MenuGamer;
