@@ -1,11 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import Movie50 from "./Movie50";
+import { Link } from "react-router-dom";
 
 const MovieList50 = () => {
-    return (
-        <div>
-            MovieList 50
-        </div>
-    )
-}
+  const [movies50, setMovies50] = useState([]);
 
-export default MovieList50
+  const getMovieRequest50 = async () => {
+    const url = "http://www.omdbapi.com/?s=fast_furious&type=movie&apikey=68259e92";
+
+    const response = await fetch(url);
+    const responseJson = await response.json();
+
+    console.log(responseJson);
+    setMovies50(responseJson.Search);
+  };
+
+  useEffect(() => {
+    getMovieRequest50();
+  }, []);
+
+  return (
+    <div>
+          <h1 className="recomends">
+        Quarentired recommends a marathon of ...
+      </h1>
+      <Movie50 movies50={movies50} />
+      <Link to="/menu-cinema">Return</Link>
+    </div>
+  );
+};
+
+export default MovieList50;

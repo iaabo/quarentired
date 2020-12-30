@@ -15,6 +15,7 @@ const LandingPage = () => {
       >
         Say No More ... Click here!
       </Link>
+
     </div>
   );
 };
