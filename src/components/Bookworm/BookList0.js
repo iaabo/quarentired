@@ -1,30 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Book0 from "./Book0";
 import { Link } from "react-router-dom";
-import mockingbird from "../../assets/mockingbird.jpeg";
-import newworld from "../../assets/newworld.jpeg";
 
 const BookList0 = () => {
+  const [books0, setBooks0] = useState([]);
+
+  const getBookRequest0 = async () => {
+    const url =
+      "https://www.googleapis.com/books/v1/volumes?q=inauthor:stieg+larsson";
+
+    const response = await fetch(url);
+    const responseJson = await response.json();
+
+    console.log(responseJson.items);
+    setBooks0(responseJson.items);
+  };
+
+  useEffect(() => {
+    getBookRequest0();
+  }, []);
+
   return (
     <div>
-      <h1 className="books-title">Quarentired recommends ...</h1>
-      <div className="books">
-        <div className="book-1">
-          <img
-            src={mockingbird}
-            alt=""
-            style={{ height: "350px", width: "250px" }}
-          />
-          <p>To kill a Mockingbird - Harper Lee</p>
-        </div>
-        <div className="book-2">
-          <img
-            src={newworld}
-            alt=""
-            style={{ height: "350px", width: "250px" }}
-          />
-          <p>Brave new world - Aldous Huxley</p>
-        </div>
-      </div>
+      <h1 className="recomends">Quarentired recommends ...</h1>
+      <Book0 books0={books0} />
       <Link to="/menu-book">Return</Link>
     </div>
   );
