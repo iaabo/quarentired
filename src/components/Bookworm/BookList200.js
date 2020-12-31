@@ -7,7 +7,7 @@ const BookList200 = () => {
 
   const getBookRequest200 = async () => {
     const url =
-      "https://www.googleapis.com/books/v1/volumes?q=inauthor:anthony+horowitz";
+      "https://www.googleapis.com/books/v1/volumes?q=inauthor:goscinny";
 
     const response = await fetch(url);
     const responseJson = await response.json();
