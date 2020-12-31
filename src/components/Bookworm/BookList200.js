@@ -22,7 +22,7 @@ const BookList200 = () => {
 
   return (
     <div>
-      <h1 className="recomends">Quarentired recommends ...</h1>
+      <h1 className="recomends">Quarentired recommends today ...</h1>
       <Book200 books200={books200} />
       <Link to="/menu-book">Return</Link>
     </div>

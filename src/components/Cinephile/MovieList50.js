@@ -21,7 +21,7 @@ const MovieList50 = () => {
 
   return (
     <div>
-      <h1 className="recomends">Quarentired recommends a marathon of ...</h1>
+      <h1 className="recomends">Quarentired recommends today a marathon of ...</h1>
       <Movie50 movies50={movies50} />
       <Link to="/menu-cinema">Return</Link>
     </div>

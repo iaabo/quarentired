@@ -22,7 +22,7 @@ const MovieList0 = () => {
   return (
     <div>
       <h1 className="recomends">
-        Quarentired recommends a marathon of ...
+        Quarentired recommends today a marathon of ...
       </h1>
       <Movie0 movies0={movies0} />
       <Link to="/menu-cinema">Return</Link>

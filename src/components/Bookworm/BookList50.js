@@ -22,7 +22,7 @@ const BookList50 = () => {
 
   return (
     <div>
-      <h1 className="recomends">Quarentired recommends ...</h1>
+      <h1 className="recomends">Quarentired recommends today ...</h1>
       <Book50 books50={books50} />
       <Link to="/menu-book">Return</Link>
     </div>

@@ -5,7 +5,7 @@ function Book200(props) {
     <div>
       {props.books200.map((book200, index) => (
         <div>
-            Author: {book200.volumeInfo && book200.volumeInfo.authors}
+          {book200.volumeInfo && book200.volumeInfo.authors}
           <p>{book200.volumeInfo && book200.volumeInfo.title}</p>
           <img
             src={

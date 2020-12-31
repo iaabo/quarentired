@@ -22,7 +22,7 @@ const BookList0 = () => {
 
   return (
     <div>
-      <h1 className="recomends">Quarentired recommends ...</h1>
+      <h1 className="recomends">Quarentired recommends today ...</h1>
       <Book0 books0={books0} />
       <Link to="/menu-book">Return</Link>
     </div>
