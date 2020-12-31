@@ -5,12 +5,13 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background-color: #0e075f;
-  color: #faff0d;
+  color: #f1b02d;
 }
 
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
 }

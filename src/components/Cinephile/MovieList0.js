@@ -20,7 +20,7 @@ const MovieList0 = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main-container">
       <h1 className="recomends">
         Quarentired recommends today a marathon of ...
       </h1>

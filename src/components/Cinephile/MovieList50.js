@@ -20,7 +20,7 @@ const MovieList50 = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main-container">
       <h1 className="recomends">Quarentired recommends today a marathon of ...</h1>
       <Movie50 movies50={movies50} />
       <Link to="/menu-cinema">Return</Link>

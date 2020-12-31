@@ -21,7 +21,7 @@ const MovieList200 = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main-container">
       <h1 className="recomends-0">Quarentired recommends today a marathon of ...</h1>
       <Movie200 movies200={movies200} />
       <Link to="/menu-cinema">Return</Link>

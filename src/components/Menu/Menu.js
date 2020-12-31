@@ -8,8 +8,7 @@ import "./Menu.css";
 
 const Menu = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="main-container">
       <div className="menu-container">
         <h1 className="menu-title"> How are you feeling today?</h1>
         <div className="menu-content">

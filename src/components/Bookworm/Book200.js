@@ -13,7 +13,7 @@ function Book200(props) {
               book200.volumeInfo.imageLinks &&
               book200.volumeInfo.imageLinks.smallThumbnail
             }
-            alt=""
+            alt="" style={{ height: "350px", width: "250px" }}
           />
         </div>
       ))}
