@@ -33,16 +33,6 @@ const Menu = () => {
               Bookworm
             </Link>
           </div>
-          <div className="gamer">
-            <img src={game} alt="" className="img-menu" />
-            <Link
-              to="/menu-game"
-              className="link-game"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Gamer
-            </Link>
-          </div>
         </div>
       </div>
     </div>
