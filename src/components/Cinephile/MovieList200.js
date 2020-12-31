@@ -7,7 +7,7 @@ const MovieList200 = () => {
 
   const getMovieRequest200 = async () => {
     const url =
-      "http://www.omdbapi.com/?s=toy_story&type=movie&apikey=68259e92";
+      "http://www.omdbapi.com/?s=how_i_met_your_mother&type=series&apikey=68259e92";
 
     const response = await fetch(url);
     const responseJson = await response.json();
