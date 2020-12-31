@@ -23,6 +23,7 @@
   width: 200px;
   margin-top: 15px;
   border-radius: 5px;
+  color: #182353;
 }
 
 .bookworm {
@@ -38,6 +39,7 @@
   margin-top: 15px;
   border-radius: 5px;
   width: 200px;
+  color: #182353;
 }
 
 .img-menu {
@@ -55,7 +57,7 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 580px) {
   .menu-container {
     margin-top: 10px;
     font-size: 17px;

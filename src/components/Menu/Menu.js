@@ -14,21 +14,13 @@ const Menu = () => {
         <div className="menu-content">
           <div className="cinephile">
             <img src={popcorn} alt="" className="img-menu" />
-            <Link
-              to="/menu-cinema"
-              className="link-cine"
-              style={{ textDecoration: "none", color: "#182353" }}
-            >
+            <Link to="/menu-cinema" className="link-cine">
               Cinephile
             </Link>
           </div>
           <div className="bookworm">
             <img src={book} alt="" className="img-menu" />
-            <Link
-              to="/menu-book"
-              className="link-book"
-              style={{ textDecoration: "none", color: "#182353" }}
-            >
+            <Link to="/menu-book" className="link-book">
               Bookworm
             </Link>
           </div>

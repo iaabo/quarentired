@@ -26,7 +26,7 @@ const MovieList200 = () => {
         Quarentired recommends today a marathon of ...
       </h1>
       <Movie200 movies200={movies200} />
-      <h1 className="recomends-o">... with a pint of cider.</h1>
+      <h1 className="recomends-0">... with a pint of cider.</h1>
 
       <Link to="/menu-cinema">Return</Link>
     </div>
