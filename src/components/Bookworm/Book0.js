@@ -5,6 +5,7 @@ function Book0(props) {
     <div>
       {props.books0.map((book0, index) => (
         <div>
+            Author: {book0.volumeInfo && book0.volumeInfo.authors}
           <p>{book0.volumeInfo && book0.volumeInfo.title}</p>
           <img
             src={

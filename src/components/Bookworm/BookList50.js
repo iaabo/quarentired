@@ -1,29 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Book50 from "./Book50";
 import { Link } from "react-router-dom";
-import pride from "../../assets/pride.jpeg";
-import geisha from "../../assets/geisha.jpeg";
 
-const BookList0 = () => {
+const BookList50 = () => {
+  const [books50, setBooks50] = useState([]);
+
+  const getBookRequest50 = async () => {
+    const url =
+      "https://www.googleapis.com/books/v1/volumes?q=inauthor:ruiz+zafon";
+
+    const response = await fetch(url);
+    const responseJson = await response.json();
+
+    console.log(responseJson.items);
+    setBooks50(responseJson.items);
+  };
+
+  useEffect(() => {
+    getBookRequest50();
+  }, []);
+
   return (
     <div>
-      <h1 className="books-title">Quarentired recommends ...</h1>
-      <div className="books">
-        <div className="book-1">
-          <img src={pride} alt="" style={{ height: "350px", width: "250px" }} />
-          <p>Pride and Prejudice - Jane Austen</p>
-        </div>
-        <div className="book-2">
-          <img
-            src={geisha}
-            alt=""
-            style={{ height: "350px", width: "250px" }}
-          />
-          <p>Memoirs of a Geisha - Arthur Golden</p>
-        </div>
-      </div>
+      <h1 className="recomends">Quarentired recommends ...</h1>
+      <Book50 books50={books50} />
       <Link to="/menu-book">Return</Link>
     </div>
   );
 };
 
-export default BookList0;
+export default BookList50;
