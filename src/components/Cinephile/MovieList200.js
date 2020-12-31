@@ -23,9 +23,10 @@ const MovieList200 = () => {
   return (
     <div className="main-container">
       <h1 className="recomends-0">
-        Quarentired recommends today a marathon of ... with a glass of Rosé
+        Quarentired recommends today a marathon of ...
       </h1>
       <Movie200 movies200={movies200} />
+      <h1 className="recomends-o">... with a pint of cider.</h1>
 
       <Link to="/menu-cinema">Return</Link>
     </div>

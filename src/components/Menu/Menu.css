@@ -20,6 +20,7 @@
 .link-cine {
   background-color: #f1b02c;
   padding: 15px;
+  width: 200px;
   margin-top: 15px;
   border-radius: 5px;
 }
@@ -36,9 +37,52 @@
   padding: 15px;
   margin-top: 15px;
   border-radius: 5px;
+  width: 200px;
 }
 
 .img-menu {
   width: 200px;
   height: 200px;
+}
+
+@media only screen and (max-width: 850px) {
+  .menu-container {
+    font-size: 20px;
+  }
+  .img-menu {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .menu-container {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .menu-content {
+    display: block;
+  }
+
+  .bookworm {
+    margin-left: 0px;
+  }
+  .cinephile {
+    margin-right: 0px;
+    margin-bottom: 35px;
+    margin-top: -60px;
+  }
+
+  .link-cine {
+    width: 120px;
+  }
+  .link-book {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .menu-container {
+    font-size: 15px;
+  }
 }
