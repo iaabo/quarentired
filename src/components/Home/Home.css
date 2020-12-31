@@ -1,7 +1,35 @@
 .title h2 {
   font-size: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 150px;
   font-weight: lighter;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+  .title h2 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .title h2 {
+    font-size: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .title h2 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .title h2 {
+    font-size: 30px;
+  }
 }

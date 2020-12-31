@@ -1,11 +1,41 @@
+.menu-container {
+  font-size: 30px;
+  margin-top: -150px;
+}
+
 .menu-content {
+  margin-top: 100px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   padding: 0 4px;
 }
 
 .cinephile {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.link-cine {
+  background-color: #f1b02c;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.bookworm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.link-book {
+  background-color: #f1b02c;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 
 .img-menu {

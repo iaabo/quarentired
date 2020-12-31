@@ -17,7 +17,7 @@ const Menu = () => {
             <Link
               to="/menu-cinema"
               className="link-cine"
-              style={{ textDecoration: "none", color: "white" }}
+              style={{ textDecoration: "none", color: "#182353" }}
             >
               Cinephile
             </Link>
@@ -27,7 +27,7 @@ const Menu = () => {
             <Link
               to="/menu-book"
               className="link-book"
-              style={{ textDecoration: "none", color: "white" }}
+              style={{ textDecoration: "none", color: "#182353" }}
             >
               Bookworm
             </Link>
