@@ -1,3 +1,5 @@
+/* Menu Boredom */
+
 .main-container-boredom {
   height: 100vh;
   width: 100%;
@@ -124,4 +126,15 @@
   .link-hundred {
     width: 100px;
   }
+}
+
+/* Movie Recommendations - MovieList Component */
+
+.main-recomends {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }

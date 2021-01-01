@@ -21,13 +21,13 @@ const MovieList0 = () => {
   }, []);
 
   return (
-    <div className="main-container">
-      <h1 className="recomends">
+    <div className="main-recomends">
+      <h1 className="recomends-h1">
         Quarentired recommends today a marathon of ...
       </h1>
       <Movie0 movies0={movies0} />
-      <h1 className="recomends">... with a cup of green tea.</h1>
-      <Link to="/menu-cinema">Return</Link>
+      <h1 className="recomends-h1">... with a cup of green tea.</h1>
+      <Link to="/menu-cinema" className="link-return">Return</Link>
     </div>
   );
 };
