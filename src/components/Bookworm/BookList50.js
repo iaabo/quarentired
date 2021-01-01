@@ -7,7 +7,7 @@ const BookList50 = () => {
 
   const getBookRequest50 = async () => {
     const url =
-      "https://www.googleapis.com/books/v1/volumes?q=inauthor:ruiz+zafon";
+      "https://www.googleapis.com/books/v1/volumes?q=intitle:midnight+inauthor:ruiz+zafon";
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -21,7 +21,7 @@ const BookList50 = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main-container"> 
       <h1 className="recomends">Quarentired recommends today ...</h1>
       <Book50 books50={books50} />
       <Link to="/menu-book">Return</Link>
