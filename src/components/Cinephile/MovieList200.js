@@ -8,7 +8,7 @@ const MovieList200 = () => {
 
   const getMovieRequest200 = async () => {
     const url =
-      "http://www.omdbapi.com/?s=how_i_met_your_mother&type=series&apikey=68259e92";
+      "https://www.omdbapi.com/?s=how_i_met_your_mother&type=series&apikey=68259e92";
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -26,7 +26,7 @@ const MovieList200 = () => {
       <div className="img-container">
         <div className="background-container">
           <h1 className="header-message">
-            Quarentired recommends today these marathon with a pint of cider.
+            Quarentired recommends today this marathon with a pint of cider.
           </h1>
         </div>
       </div>
