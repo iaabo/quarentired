@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <p className="footer-text">
-        Done with MovieDB API + Google Books API by Inês Barroso
+        * Done with OMDb API + Google Books API by Inês Barroso
       </p>
     </div>
   );

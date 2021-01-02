@@ -3,9 +3,9 @@ import "./Bookworm.css";
 
 function Book0(props) {
   return (
-    <div className="movie-container">
+    <div className="container-book">
       {props.books0.map((book0, index) => (
-        <div className="movie-card">
+        <div className="book-card">
           <img
             src={
               book0.volumeInfo &&
@@ -15,8 +15,10 @@ function Book0(props) {
             alt="Picture not available"
             style={{ height: "350px", width: "250px" }}
           />
-         {/*  {book0.volumeInfo && book0.volumeInfo.authors}
-          <p>{book0.volumeInfo && book0.volumeInfo.title}</p> */}
+          <div className="movie-details">
+            <p>{book0.volumeInfo && book0.volumeInfo.authors}</p>
+            <p>{book0.volumeInfo && book0.volumeInfo.title}</p>
+          </div>
         </div>
       ))}
     </div>

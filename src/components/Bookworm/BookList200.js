@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Book200 from "./Book200";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
+import "./Bookworm.css";
 
 const BookList200 = () => {
   const [books200, setBooks200] = useState([]);
@@ -21,10 +23,23 @@ const BookList200 = () => {
   }, []);
 
   return (
-    <div className="main-container">
-      <h1 className="recomends">Quarentired recommends today ...</h1>
-      <Book200 books200={books200} />
-      <Link to="/menu-book">Return</Link>
+    <div>
+      <div className="img-container-books">
+        <div className="background-container">
+          <h1 className="header-message">
+            Today Quarentired recommends these readings with a hot chocolate.
+          </h1>
+        </div>
+      </div>
+      <div className="container">
+        <Book200 books200={books200} />
+        <div className="btn-return">
+          <Link to="/menu-book" className="link-return">
+            Return
+          </Link>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

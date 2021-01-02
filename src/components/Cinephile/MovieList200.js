@@ -26,7 +26,7 @@ const MovieList200 = () => {
       <div className="img-container">
         <div className="background-container">
           <h1 className="header-message">
-            Quarentired recommends today a marathon of ... with a pint of cider.
+            Quarentired recommends today these marathon with a pint of cider.
           </h1>
         </div>
       </div>

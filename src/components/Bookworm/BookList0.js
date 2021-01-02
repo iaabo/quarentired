@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Book0 from "./Book0";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import "./Bookworm.css";
 
 const BookList0 = () => {
   const [books0, setBooks0] = useState([]);
@@ -21,11 +22,11 @@ const BookList0 = () => {
 
   return (
     <div>
-      <div className="img-container">
+      <div className="img-container-books">
         <div className="background-container">
           <h1 className="header-message">
             Today Quarentired recommends these readings with a cup of iced
-            coffee
+            coffee.
           </h1>
         </div>
       </div>
