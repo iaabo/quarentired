@@ -4,7 +4,7 @@ function Book50(props) {
   return (
     <div>
       {props.books50.map((book50, index) => (
-        <div>
+        <div className="container-books">
             {book50.volumeInfo && book50.volumeInfo.authors}
           <p>{book50.volumeInfo && book50.volumeInfo.title}</p>
           <img
@@ -13,7 +13,7 @@ function Book50(props) {
               book50.volumeInfo.imageLinks &&
               book50.volumeInfo.imageLinks.smallThumbnail
             }
-            alt="" style={{ height: "350px", width: "250px" }}
+            alt="Picture not available" style={{ height: "350px", width: "250px" }}
           />
         </div>
       ))}

@@ -7,7 +7,7 @@ const BookList50 = () => {
 
   const getBookRequest50 = async () => {
     const url =
-      "https://www.googleapis.com/books/v1/volumes?q=intitle:midnight+inauthor:ruiz+zafon";
+      "https://www.googleapis.com/books/v1/volumes?q=intitle:shadows+inauthor:ruiz+zafon";
 
     const response = await fetch(url);
     const responseJson = await response.json();

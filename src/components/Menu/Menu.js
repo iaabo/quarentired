@@ -3,7 +3,6 @@ import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import popcorn from "../../assets/popcorn.png";
 import book from "../../assets/book.png";
-import game from "../../assets/game.png";
 import "./Menu.css";
 
 const Menu = () => {

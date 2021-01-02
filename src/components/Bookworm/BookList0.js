@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Book0 from "./Book0";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const BookList0 = () => {
   const [books0, setBooks0] = useState([]);
-
   const getBookRequest0 = async () => {
-    const url =
-      "https://www.googleapis.com/books/v1/volumes?q=inauthor:Lagercrantz";
+    const url = `https://www.googleapis.com/books/v1/volumes?q=inauthor:Lagercrantz/`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -21,10 +20,24 @@ const BookList0 = () => {
   }, []);
 
   return (
-    <div className="main-content">
-      <h1 className="recomends"> Today Quarentired recommends these readings with a cup of iced coffee</h1>
-      <Book0 books0={books0} />
-      <Link to="/menu-book">Return</Link>
+    <div>
+      <div className="img-container">
+        <div className="background-container">
+          <h1 className="header-message">
+            Today Quarentired recommends these readings with a cup of iced
+            coffee
+          </h1>
+        </div>
+      </div>
+      <div className="container">
+        <Book0 books0={books0} />
+        <div className="btn-return">
+          <Link to="/menu-book" className="link-return">
+            Return
+          </Link>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

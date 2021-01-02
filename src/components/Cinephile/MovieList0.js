@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Movie0 from "./Movie0";
+import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 
 const MovieList0 = () => {
@@ -21,13 +22,24 @@ const MovieList0 = () => {
   }, []);
 
   return (
-    <div className="main-recomends">
-      <h1 className="recomends-h1">
-        Quarentired recommends today a marathon of ...
-      </h1>
-      <Movie0 movies0={movies0} />
-      <h1 className="recomends-h1">... with a cup of green tea.</h1>
-      <Link to="/menu-cinema" className="link-return">Return</Link>
+    <div>
+      <div className="img-container">
+        <div className="background-container">
+          <h1 className="header-message">
+            Quarentired recommends today a marathon of ... with a cup of green
+            tea
+          </h1>
+        </div>
+      </div>
+      <div className="container">
+        <Movie0 movies0={movies0} />
+        <div className="btn-return">
+          <Link to="/menu-cinema" className="link-return">
+            Return
+          </Link>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
