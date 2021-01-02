@@ -27,7 +27,7 @@ const BookList200 = () => {
       <div className="img-container-books">
         <div className="background-container">
           <h1 className="header-message">
-            Today Quarentired recommends these readings with a hot chocolate.
+            Today Quarentired recommends these readings with a cup of hot chocolate.
           </h1>
         </div>
       </div>
